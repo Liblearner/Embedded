@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"seris_comuni\startup_stm32f411xe.o"
+"seris_comuni\main.o"
+"seris_comuni\gpio.o"
+"seris_comuni\usart.o"
+"seris_comuni\stm32f4xx_it.o"
+"seris_comuni\stm32f4xx_hal_msp.o"
+"seris_comuni\stm32f4xx_hal_tim.o"
+"seris_comuni\stm32f4xx_hal_tim_ex.o"
+"seris_comuni\stm32f4xx_hal_uart.o"
+"seris_comuni\stm32f4xx_hal_rcc.o"
+"seris_comuni\stm32f4xx_hal_rcc_ex.o"
+"seris_comuni\stm32f4xx_hal_flash.o"
+"seris_comuni\stm32f4xx_hal_flash_ex.o"
+"seris_comuni\stm32f4xx_hal_flash_ramfunc.o"
+"seris_comuni\stm32f4xx_hal_gpio.o"
+"seris_comuni\stm32f4xx_hal_dma_ex.o"
+"seris_comuni\stm32f4xx_hal_dma.o"
+"seris_comuni\stm32f4xx_hal_pwr.o"
+"seris_comuni\stm32f4xx_hal_pwr_ex.o"
+"seris_comuni\stm32f4xx_hal_cortex.o"
+"seris_comuni\stm32f4xx_hal.o"
+"seris_comuni\stm32f4xx_hal_exti.o"
+"seris_comuni\system_stm32f4xx.o"
+--strict --scatter "seris_comuni\seris_comuni.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "seris_comuni.map" -o seris_comuni\seris_comuni.axf
