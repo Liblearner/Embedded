@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"timeinterupt\startup_stm32f411xe.o"
+"timeinterupt\main.o"
+"timeinterupt\gpio.o"
+"timeinterupt\tim.o"
+"timeinterupt\stm32f4xx_it.o"
+"timeinterupt\stm32f4xx_hal_msp.o"
+"timeinterupt\stm32f4xx_hal_tim.o"
+"timeinterupt\stm32f4xx_hal_tim_ex.o"
+"timeinterupt\stm32f4xx_hal_rcc.o"
+"timeinterupt\stm32f4xx_hal_rcc_ex.o"
+"timeinterupt\stm32f4xx_hal_flash.o"
+"timeinterupt\stm32f4xx_hal_flash_ex.o"
+"timeinterupt\stm32f4xx_hal_flash_ramfunc.o"
+"timeinterupt\stm32f4xx_hal_gpio.o"
+"timeinterupt\stm32f4xx_hal_dma_ex.o"
+"timeinterupt\stm32f4xx_hal_dma.o"
+"timeinterupt\stm32f4xx_hal_pwr.o"
+"timeinterupt\stm32f4xx_hal_pwr_ex.o"
+"timeinterupt\stm32f4xx_hal_cortex.o"
+"timeinterupt\stm32f4xx_hal.o"
+"timeinterupt\stm32f4xx_hal_exti.o"
+"timeinterupt\system_stm32f4xx.o"
+--strict --scatter "Timeinterupt\Timeinterupt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Timeinterupt.map" -o Timeinterupt\Timeinterupt.axf
